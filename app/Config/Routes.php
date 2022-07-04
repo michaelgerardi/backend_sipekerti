@@ -64,6 +64,8 @@ $routes->post('/tugas','tugas::create');
 $routes->get('/tugas/(:segment)' , 'tugas::show/$1');
 $routes->put('/tugas/(:segment)','tugas::update/$1');
 $routes->delete('/tugas/(:segment)','tugas::delete/$1');
+$routes->get('/level','login::select_level');
+$routes->get('/level2','login::select_level2');
 
 /*
  * --------------------------------------------------------------------

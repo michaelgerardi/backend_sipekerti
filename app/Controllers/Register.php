@@ -13,13 +13,15 @@ class Register extends Controller
 
         $rules = [
             'email'         => 'required|valid_email|is_unique[users.email]',
-            'password'      => 'required|min_length[6]|max_length[200]'
+            'password'      => 'required|min_length[6]|max_length[200]',
+            'level'         =>'required'
         ];
         if(!$this->validate($rules)) return $this->fail($this->validator->getErrors());
             $model = new UserModel();
             $data = [
                 'email'    => $this->request->getVar('email'),
-                'password' => $this->request->getVar('password')
+                'password' => $this->request->getVar('password'),
+                'level'    => $this->request->getVar('level')
             ];
             $registered = $model->save($data);
             return $this->respond($registered);

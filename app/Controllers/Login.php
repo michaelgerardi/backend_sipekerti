@@ -7,10 +7,12 @@ use CodeIgniter\Database\BaseBuilder;
  
 class Login extends Controller
 {
+    public $db;
     public function __construct()
 	{
 		$this->db = \Config\Database::connect();
 	}
+    
 
     use ResponseTrait;
     public function auth(){
@@ -34,6 +36,19 @@ class Login extends Controller
         }else{
             return $this->respond('Gagal login');
         }
+    }
+
+
+    public function select_level(){
+        $model = new UserModel();
+        $data = $model->where('level',3)->findAll();
+      return $this->respond($data, 200);
+    }
+
+    public function select_level2(){
+        $model = new UserModel();
+        $data = $model->where('level',2)->findAll();
+      return $this->respond($data, 200);
     }
 
     // public function coba_multiuser(){
