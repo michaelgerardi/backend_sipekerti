@@ -1,0 +1,92 @@
+ERROR - 2022-07-07 09:54:37 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2022-07-07 09:54:37 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `kelas` SET `deleted_at` = \'2022-07-07 09:54:37\', `updated_at` = \'2022-07-07 09:54:37\'
+WHERE `id` IN (\'46\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kelas` SET `deleted_at` = \'2022-07-07 09:54:37\', `updated_at` = \'2022-07-07 09:54:37\'
+WHERE `id` IN (\'46\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kelas` SET `deleted_at` = \'2022-07-07 09:54:37\', `updated_at` = \'2022-07-07 09:54:37\'
+WHERE `id` IN (\'46\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `kelas` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(397): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Kelas.php(49): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kelas->delete('46')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-07 10:00:10 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2022-07-07 10:00:10 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `kelas` SET `deleted_at` = \'2022-07-07 10:00:10\', `updated_at` = \'2022-07-07 10:00:10\'
+WHERE `id` IN (\'46\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kelas` SET `deleted_at` = \'2022-07-07 10:00:10\', `updated_at` = \'2022-07-07 10:00:10\'
+WHERE `id` IN (\'46\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kelas` SET `deleted_at` = \'2022-07-07 10:00:10\', `updated_at` = \'2022-07-07 10:00:10\'
+WHERE `id` IN (\'46\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `kelas` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(397): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Kelas.php(49): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kelas->delete('46')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-07 10:03:39 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2022-07-07 10:03:39 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `kelas` SET `deleted_at` = \'2022-07-07 10:03:39\', `updated_at` = \'2022-07-07 10:03:39\'
+WHERE `id` IN (\'46\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kelas` SET `deleted_at` = \'2022-07-07 10:03:39\', `updated_at` = \'2022-07-07 10:03:39\'
+WHERE `id` IN (\'46\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kelas` SET `deleted_at` = \'2022-07-07 10:03:39\', `updated_at` = \'2022-07-07 10:03:39\'
+WHERE `id` IN (\'46\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `kelas` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(397): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Kelas.php(49): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kelas->delete('46')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-07 10:14:38 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2022-07-07 10:14:38 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `kelas` SET `deleted_at` = \'2022-07-07 10:14:38\', `updated_at` = \'2022-07-07 10:14:38\'
+WHERE `id` IN (\'46\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kelas` SET `deleted_at` = \'2022-07-07 10:14:38\', `updated_at` = \'2022-07-07 10:14:38\'
+WHERE `id` IN (\'46\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kelas` SET `deleted_at` = \'2022-07-07 10:14:38\', `updated_at` = \'2022-07-07 10:14:38\'
+WHERE `id` IN (\'46\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `kelas` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(397): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Kelas.php(49): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kelas->delete('46')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

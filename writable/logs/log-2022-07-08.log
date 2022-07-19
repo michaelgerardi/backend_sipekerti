@@ -1,0 +1,27 @@
+ERROR - 2022-07-08 08:29:33 --> Unknown column 'kelas.deleted_at' in 'where clause'
+CRITICAL - 2022-07-08 08:29:33 --> Unknown column 'kelas.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `kelas`
+WHERE `kelas`.`deleted_at` IS NULL
+AND `kelas`.`id` = \'51\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kelas`
+WHERE `kelas`.`deleted_at` IS NULL
+AND `kelas`.`id` = \'51\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kelas`
+WHERE `kelas`.`deleted_at` IS NULL
+AND `kelas`.`id` = \'51\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kelas`
+WHERE `kelas`.`deleted_at` IS NULL
+AND `kelas`.`id` = :kelas.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '51')
+ 7 APPPATH\Controllers\Kelas.php(47): CodeIgniter\BaseModel->find('51')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Kelas->delete('51')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

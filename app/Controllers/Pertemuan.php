@@ -173,4 +173,19 @@ class Pertemuan extends ResourceController
         return $this->respond($data, 200);
     }
 
+    public function history_pertemuan(){
+        $model = new PertemuanModel();
+        $data = $model->onlyDeleted()->findAll();
+        return $this->respond($data, 200);
+    }
+
+    public function restore_pertemuan($id = null){
+        $this->db = \Config\Database::connect();
+        $data = $this->db->table('pertemuan')
+        ->set('deleted_at',null,true)
+        ->where('id',$id)->update();
+        return $this->respond($data);
+
+    }
+
 }          

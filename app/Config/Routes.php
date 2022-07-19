@@ -40,12 +40,17 @@ $routes->post('/register','register::register');
 $routes->post('/login','login::auth');
 $routes->get('/nama','Pertemuan::getnama');
 $routes->get('/kelas','Kelas::index');
+$routes->get('/historykelas','Kelas::history');
+$routes->get('/restore/(:segment)','kelas::restore/$1');
 $routes->post('/kelas','Kelas::create');
 $routes->get('/kelas/(:segment)' , 'Kelas::show/$1');
 $routes->put('/kelas/(:segment)','kelas::update/$1');
+// $routes->delete('/kelaspermanen/(:segment)','kelas::deletes_permanen/$1');
 $routes->delete('/kelas/(:segment)','kelas::delete/$1');
 $routes->get('/pertemuan','Pertemuan::index');
 $routes->post('/pertemuan','Pertemuan::create');
+$routes->get('/historypertemuan','pertemuan::history_pertemuan');
+$routes->get('/restore_pertemuan/(:segment)','pertemuan::restore_pertemuan/$1');
 $routes->get('/pertemuan/(:segment)' , 'Pertemuan::show/$1');
 $routes->put('/pertemuan/(:segment)','Pertemuan::update/$1');
 $routes->delete('/pertemuan/(:segment)','Pertemuan::delete/$1');
@@ -66,6 +71,11 @@ $routes->put('/tugas/(:segment)','tugas::update/$1');
 $routes->delete('/tugas/(:segment)','tugas::delete/$1');
 $routes->get('/level','login::select_level');
 $routes->get('/level2','login::select_level2');
+
+$routes->post('/inputgambar','gambar::inputgambar');
+$routes->get('/nilai','nilai::indexnilai');
+$routes->post('/nilai','nilai::createnilai');
+$routes->get('/dashboard','nilai::dashboard');
 
 /*
  * --------------------------------------------------------------------

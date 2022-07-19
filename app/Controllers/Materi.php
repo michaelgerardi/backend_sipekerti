@@ -129,12 +129,7 @@ class materi extends ResourceController
 		}
 	}
 
-	public function downloadmateri($id ){
-		$model = new MateriModel();
-		$data = $model->find($id);
-		//return $this-> ->download('./assets/uploads'. $data->model,null);
-	} 
-
+	
 }
 
 

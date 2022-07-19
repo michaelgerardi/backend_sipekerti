@@ -50,30 +50,5 @@ class Login extends Controller
         $data = $model->where('level',2)->findAll();
       return $this->respond($data, 200);
     }
-
-    // public function coba_multiuser(){
-    //     session_start();
-    //     $username = $_POST['username'];
-    //     $password = $_POST['password'];
-    //     $user = mysqli_query($koneksi, "select * from user where username='$username' and password='$password'");
-    //     $cek = mysqli_num_rows($user);
-    //     if($cek > 0){
-    //         $data = mysqli_fetch_assoc($user);
-    //         //buat session username dan levelnya
-    //         if($data['level'] == 'admin'){
-    //             $_SESSION['username'] = $username;
-    //             $_SESSION['level'] = 'admin';
-    //             return $this.respond($data);
-    //         }elseif($data['level'] == 'pengajar'){
-    //             $_SESSION['username'] = $username;
-    //             $_SESSION['level'] = 'pengajar';
-    //             return $this.respond($data);
-    //         }elseif($data['level']== 'dosen'){
-    //             $_SESSION['username'] = $username;
-    //             $_SESSION['level'] = 'dosen';
-    //             return $this.respond($data);
-    //         }
-    //     }
-
-    // }
+  
 }

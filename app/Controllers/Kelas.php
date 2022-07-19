@@ -78,8 +78,7 @@ class Kelas extends ResourceController
             }else{
                 $input = $this->request->getRawInput();
                 $data = [
-                    'nama_kelas' => $input['nama_kelas'],
-                    'tanggal_mulai' => $input['tanggal_mulai'],
+                    'nama_kelas' => $input['nama_kelas'],                     'tanggal_mulai' => $input['tanggal_mulai'],
                     'tanggal_selesai'=>$input['tanggal_selesai'],
                     'deskripsi'=>$input['deskripsi'],
                     'tahun'=>$input['tahun']
@@ -108,5 +107,38 @@ class Kelas extends ResourceController
             return $this->failNotFound('No Data Found with id '.$id);
         }
     }
+
+    public function history(){
+        $model = new KelasModel();
+        $data = $model->onlyDeleted()->findAll();
+        return $this->respond($data, 200);
+    }
+
+    public function restore($id = null){
+        $this->db = \Config\Database::connect();
+        $data = $this->db->table('kelas')
+        ->set('deleted_at',null,true)
+        ->where('id',$id)->update();
+        return $this->respond($data);
+
+    }
+
+    // public function deletes_permanen($id = null){
+    //     $model = new KelasModel();
+    //     if($data){
+    //         $model->withDeleted()->find($id);
+    //         $response = [
+    //             'status'   => 200,
+    //             'error'    => null,
+    //             'messages' => [
+    //                 'success' => 'Data Deleted'
+    //             ]
+    //         ];
+            
+    //         return $this->respondDeleted($response);
+    //     }else{
+    //         return $this->failNotFound('No Data Found with id '.$id);
+    //     }
+    // }
     
 }
