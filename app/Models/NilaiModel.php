@@ -21,4 +21,12 @@ class NilaiModel extends Model
         $data = $builder->get();
         return $data;
     }
+
+    public function datanilai_peserta(){
+        $builder = $this->db->table('nilai');
+        $builder->select('nama,nilai,status');
+        $builder->join('users','nilai.id_peserta = users.id');
+        $data = $builder->get();
+        return $data;
+    }
 }

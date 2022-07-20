@@ -129,7 +129,11 @@ class materi extends ResourceController
 		}
 	}
 
-	
+	public function joindata(){
+        $model = new MateriModel();
+        $data = $model->joindata()->getResult();
+        return $this->respond($data,200);
+    }
 }
 
 

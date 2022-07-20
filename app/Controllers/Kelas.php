@@ -123,22 +123,5 @@ class Kelas extends ResourceController
 
     }
 
-    // public function deletes_permanen($id = null){
-    //     $model = new KelasModel();
-    //     if($data){
-    //         $model->withDeleted()->find($id);
-    //         $response = [
-    //             'status'   => 200,
-    //             'error'    => null,
-    //             'messages' => [
-    //                 'success' => 'Data Deleted'
-    //             ]
-    //         ];
-            
-    //         return $this->respondDeleted($response);
-    //     }else{
-    //         return $this->failNotFound('No Data Found with id '.$id);
-    //     }
-    // }
     
 }

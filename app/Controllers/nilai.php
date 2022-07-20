@@ -53,4 +53,12 @@ class nilai extends ResourceController
         $data = $model->countdata()->getResult();
         return $this->respond($data,200);
     }
+
+    public function nilai_peserta(){
+        $model = new NilaiModel();
+        $data = $model->datanilai_peserta()->getResult();
+        return $this->respond($data,200);
+    }
+
+
 }

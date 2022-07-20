@@ -112,4 +112,19 @@ class Dosen extends ResourceController
         return $this->respond($response);
     }
 
+    public function history(){
+        $model = new DosenModel();
+        $data = $model->onlyDeleted()->findAll();
+        return $this->respond($data, 200);
+    }
+
+    public function restore($id = null){
+        $this->db = \Config\Database::connect();
+        $data = $this->db->table('dosen')
+        ->set('deleted_at',null,true)
+        ->where('id',$id)->update();
+        return $this->respond($data);
+
+    }
+
 }

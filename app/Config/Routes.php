@@ -76,6 +76,8 @@ $routes->post('/inputgambar','gambar::inputgambar');
 $routes->get('/nilai','nilai::indexnilai');
 $routes->post('/nilai','nilai::createnilai');
 $routes->get('/dashboard','nilai::dashboard');
+$routes->get('/joinmateri','materi::joindata');
+$routes->get('/dafnilai','nilai::nilai_peserta');
 
 /*
  * --------------------------------------------------------------------
