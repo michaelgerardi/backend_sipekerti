@@ -59,4 +59,8 @@ $method = $_SERVER['REQUEST_METHOD'];
 if($method == "OPTIONS") {
 die();
 }
+<<<<<<< HEAD
 $app->run();
+=======
+$app->run();
+>>>>>>> 87df145796cd6864b5e6c5f0a6900f71b5dc3066

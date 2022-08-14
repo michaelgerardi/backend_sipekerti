@@ -159,12 +159,11 @@ public function nama_pertemuan($id = null){
 		}
 	}
 
-	public function downloadmateri($id ){
-		$model = new MateriModel();
-		$data = $model->find($id);
-		//return $this-> ->download('./assets/uploads'. $data->model,null);
-	} 
-
+	public function joindata(){
+        $model = new MateriModel();
+        $data = $model->joindata()->getResult();
+        return $this->respond($data,200);
+    }
 }
 
 

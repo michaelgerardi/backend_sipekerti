@@ -7,10 +7,12 @@ use CodeIgniter\Database\BaseBuilder;
  
 class Login extends Controller
 {
+    public $db;
     public function __construct()
 	{
 		$this->db = \Config\Database::connect();
 	}
+    
 
     use ResponseTrait;
     public function auth(){
@@ -39,6 +41,7 @@ class Login extends Controller
         }
     }
 
+<<<<<<< HEAD
     public function delete($id = null)
       {
           $model = new UserModel();
@@ -100,4 +103,19 @@ class Login extends Controller
       {
         return $this->respond(session());
       }
+=======
+
+    public function select_level(){
+        $model = new UserModel();
+        $data = $model->where('level',3)->findAll();
+      return $this->respond($data, 200);
+    }
+
+    public function select_level2(){
+        $model = new UserModel();
+        $data = $model->where('level',2)->findAll();
+      return $this->respond($data, 200);
+    }
+  
+>>>>>>> 87df145796cd6864b5e6c5f0a6900f71b5dc3066
 }

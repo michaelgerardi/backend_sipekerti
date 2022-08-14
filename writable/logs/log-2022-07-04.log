@@ -1,0 +1,191 @@
+CRITICAL - 2022-07-04 05:10:17 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\Login.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-04 05:15:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:' at line 3
+CRITICAL - 2022-07-04 05:15:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+WHERE 0 = :0:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE 0 = :0:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE 0 = :0:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE 0 = :0:', [...], false)
+ 5 APPPATH\Controllers\Login.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-04 05:16:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:' at line 3
+CRITICAL - 2022-07-04 05:16:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+WHERE 0 = :0:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE 0 = :0:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE 0 = :0:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE 0 = :0:', [...], false)
+ 5 APPPATH\Controllers\Login.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-04 08:00:31 --> Undefined variable $db
+in APPPATH\Controllers\Login.php on line 43.
+ 1 APPPATH\Controllers\Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Controllers\\Login.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-04 08:03:08 --> Table 'angular.user' doesn't exist
+CRITICAL - 2022-07-04 08:03:08 --> Table 'angular.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+WHERE `level` IS NULL
+ LIMIT 3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+WHERE `level` IS NULL
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+WHERE `level` IS NULL
+ LIMIT 3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `level` IS NULL
+ LIMIT 3', [], false)
+ 5 APPPATH\Controllers\Login.php(45): CodeIgniter\Database\BaseBuilder->getWhere('level', 3)
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-04 08:05:35 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\Login.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-04 08:06:09 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Controllers\Login.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-04 08:11:03 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\Login.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-04 08:14:24 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\Login.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-04 08:22:28 --> Undefined variable $db
+in APPPATH\Controllers\Login.php on line 43.
+ 1 APPPATH\Controllers\Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Controllers\\Login.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-04 08:47:56 --> Undefined variable $builder
+in APPPATH\Controllers\Login.php on line 43.
+ 1 APPPATH\Controllers\Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', 'APPPATH\\Controllers\\Login.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-04 08:49:52 --> Undefined variable $builder
+in APPPATH\Controllers\Login.php on line 43.
+ 1 APPPATH\Controllers\Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', 'APPPATH\\Controllers\\Login.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-04 08:50:36 --> Undefined variable $db
+in APPPATH\Controllers\Login.php on line 43.
+ 1 APPPATH\Controllers\Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Controllers\\Login.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-04 08:51:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'form Users where Users.level = 3)
+FROM `users`' at line 1
+CRITICAL - 2022-07-04 08:51:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'form Users where Users.level = 3)
+FROM `users`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT (select * form Users where Users.level = 3)
+FROM `users`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT (select * form Users where Users.level = 3)
+FROM `users`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT (select * form Users where Users.level = 3)
+FROM `users`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT (select * form Users where Users.level = 3)
+FROM `users`', [], false)
+ 5 APPPATH\Controllers\Login.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-04 08:52:34 --> Unknown column 'User.Level' in 'where clause'
+CRITICAL - 2022-07-04 08:52:34 --> Unknown column 'User.Level' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+WHERE `User`.`Level` = 3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `User`.`Level` = 3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `User`.`Level` = 3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `User`.`Level` = 3', [], false)
+ 5 APPPATH\Controllers\Login.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-04 08:59:35 --> Too few arguments to function CodeIgniter\Database\BaseBuilder::where(), 0 passed in D:\Xampp\htdocs\login_nonjwt\system\Model.php on line 771 and at least 1 expected
+in SYSTEMPATH\Database\BaseBuilder.php on line 672.
+ 1 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->where()
+ 2 APPPATH\Controllers\Login.php(44): CodeIgniter\Model->__call('where', [])
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->select_level()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

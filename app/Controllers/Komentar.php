@@ -119,9 +119,14 @@ class Komentar extends ResourceController
           return $this->respond($response);
       }
 
+<<<<<<< HEAD
       public function getnama_pertemuan($id = null){
 		$model = new KomentarModel();
         $data = $model->nama_pertemuan($id)->getResult();
         return $this->respond($data,200);
 	}
+=======
+      
+
+>>>>>>> 87df145796cd6864b5e6c5f0a6900f71b5dc3066
 }

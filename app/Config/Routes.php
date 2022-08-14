@@ -40,6 +40,7 @@ $routes->get('/', 'Home::index');
 $routes->post('/register','register::register');
 $routes->post('/addPengajar','register::registerPengajar');
 $routes->post('/login','login::auth');
+
 $routes->delete('/delete/(:segment)','login::delete/$1');
 $routes->delete('/delete-permanent/(:segment)','dosen::delete/$1');
 $routes->put('/update/(:segment)','login::update/$1');
@@ -48,8 +49,18 @@ $routes->put('/update/(:segment)','login::update/$1');
 $routes->get('/kelas','kelas::index'); //all
 $routes->post('/kelas','kelas::create'); 
 $routes->get('/kelas/(:segment)', 'kelas::show/$1'); //byId
+
+$routes->get('/nama','Pertemuan::getnama');
+$routes->get('/kelas','Kelas::index');
+$routes->get('/historykelas','Kelas::history');
+$routes->get('/restore/(:segment)','kelas::restore/$1');
+$routes->post('/kelas','Kelas::create');
+$routes->get('/kelas/(:segment)' , 'Kelas::show/$1');
+
 $routes->put('/kelas/(:segment)','kelas::update/$1');
+// $routes->delete('/kelaspermanen/(:segment)','kelas::deletes_permanen/$1');
 $routes->delete('/kelas/(:segment)','kelas::delete/$1');
+
 $routes->delete('/delete-kelas/(:segment)','kelas::deletePermanent/$1');
 $routes->get('/historyKelas','Kelas::history');
 $routes->get('/restore/(:segment)','kelas::restore/$1');
@@ -70,6 +81,18 @@ $routes->get('/restorePertemuan/(:segment)','pertemuan::restore_pertemuan/$1');
 $routes->post('/materi','materi::create'); 
 $routes->get('/get-materi','materi::index'); //all
 $routes->get('/materi/(:segment)','materi::getMateri/$1');//by id pertemuan
+
+$routes->get('/pertemuan','Pertemuan::index');
+$routes->post('/pertemuan','Pertemuan::create');
+$routes->get('/historypertemuan','pertemuan::history_pertemuan');
+$routes->get('/restore_pertemuan/(:segment)','pertemuan::restore_pertemuan/$1');
+$routes->get('/pertemuan/(:segment)' , 'Pertemuan::show/$1');
+$routes->put('/pertemuan/(:segment)','Pertemuan::update/$1');
+$routes->delete('/pertemuan/(:segment)','Pertemuan::delete/$1');
+$routes->get('/materi','materi::index');
+$routes->post('/materi','materi::create');
+$routes->get('/materi/(:segment)' , 'materi::show/$1');
+
 $routes->put('/materi/(:segment)','materi::update/$1');
 $routes->delete('/materi/(:segment)','materi::deletePermanent/$1');
 
@@ -87,6 +110,15 @@ $routes->get('/task/(:segment)','getid::getTugas/$1');//by id pertemuan
 $routes->post('/tugas','tugas::create');
 $routes->put('/tugas/(:segment)','tugas::update/$1');
 $routes->delete('/tugas/(:segment)','tugas::delete/$1');
+$routes->get('/level','login::select_level');
+$routes->get('/level2','login::select_level2');
+
+$routes->post('/inputgambar','gambar::inputgambar');
+$routes->get('/nilai','nilai::indexnilai');
+$routes->post('/nilai','nilai::createnilai');
+$routes->get('/dashboard','nilai::dashboard');
+$routes->get('/joinmateri','materi::joindata');
+$routes->get('/dafnilai','nilai::nilai_peserta');
 
 //TUGAS-PESERTA
 $routes->post('/tugas-peserta','tugaspeserta::create');

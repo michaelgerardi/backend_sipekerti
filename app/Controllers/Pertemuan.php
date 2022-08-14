@@ -270,10 +270,28 @@ class Pertemuan extends ResourceController
         return $this->respond($data, 200);
     }
 
+<<<<<<< HEAD
     public function pertemuanByPengajar($id = null)
     {
         $model = new PertemuanModel();
         $data = $model->getidpengajar($id)->getResult();
         return $this->respond($data, 200);
     }
+=======
+    public function history_pertemuan(){
+        $model = new PertemuanModel();
+        $data = $model->onlyDeleted()->findAll();
+        return $this->respond($data, 200);
+    }
+
+    public function restore_pertemuan($id = null){
+        $this->db = \Config\Database::connect();
+        $data = $this->db->table('pertemuan')
+        ->set('deleted_at',null,true)
+        ->where('id',$id)->update();
+        return $this->respond($data);
+
+    }
+
+>>>>>>> 87df145796cd6864b5e6c5f0a6900f71b5dc3066
 }          

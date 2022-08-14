@@ -14,8 +14,13 @@ class PertemuanModel extends Model
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
+<<<<<<< HEAD
     protected $allowedFields = ['id_kelas','id_pengajar','nama_pertemuan','tanggal_pertemuan','deskripsi_pertemuan','tempat','sub_cp','materi',
                                 'indikator','metode_penilaian','metode_pembelajaran','pustaka','bobot','link','upload_image'];
+=======
+    protected $allowedFields = ['nama_pertemuan','tanggal_pertemuan','deskripsi_pertemuan','tempat','sub_cp','materi','indikator','metode_penilaian',
+                                'metode_pembelajaran','pustaka','bobot','upload_image'];
+>>>>>>> 87df145796cd6864b5e6c5f0a6900f71b5dc3066
 
     public function nama_pengajar($id = null){
         $builder = $this->db->table('pertemuan');

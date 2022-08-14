@@ -17,7 +17,8 @@ class Register extends Controller
             'username'      => 'required|min_length[3]',
             'no_hp'         => 'required|min_length[11]',
             'email'         => 'required|valid_email|is_unique[users.email]',
-            'password'      => 'required|min_length[6]|max_length[200]'
+            'password'      => 'required|min_length[6]|max_length[200]',
+            'level'         =>'required'
         ];
         if(!$this->validate($rules)) return $this->fail($this->validator->getErrors());
             $model = new UserModel();
@@ -28,6 +29,7 @@ class Register extends Controller
                 'no_hp'    => $this->request->getVar('no_hp'),
                 'email'    => $this->request->getVar('email'),
                 'password' => $this->request->getVar('password'),
+<<<<<<< HEAD
                 'level'    => ('3')
             ];
             $registered = $model->save($data);
@@ -56,6 +58,9 @@ class Register extends Controller
                 'email'    => $this->request->getVar('email'),
                 'password' => $this->request->getVar('password'),
                 'level'    => ('2')
+=======
+                'level'    => $this->request->getVar('level')
+>>>>>>> 87df145796cd6864b5e6c5f0a6900f71b5dc3066
             ];
             $registered = $model->save($data);
             return $this->respond($registered);

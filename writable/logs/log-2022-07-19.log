@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2022-07-19 05:42:22 --> Undefined property: stdClass::$nama_kelas
 in APPPATH\Controllers\Tugas.php on line 98.
  1 APPPATH\Controllers\Tugas.php(98): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -14,3 +15,190 @@ in APPPATH\Controllers\Tugas.php on line 98.
  4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+=======
+CRITICAL - 2022-07-19 07:40:30 --> Call to a member function table() on null
+in APPPATH\Controllers\nilai.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 07:43:47 --> Call to a member function table() on null
+in APPPATH\Controllers\nilai.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 07:44:32 --> Call to a member function table() on null
+in APPPATH\Controllers\nilai.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 07:45:08 --> Call to a member function table() on null
+in APPPATH\Controllers\nilai.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 07:46:13 --> Call to a member function table() on null
+in APPPATH\Controllers\nilai.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 07:47:53 --> Call to a member function table() on null
+in APPPATH\Controllers\nilai.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 07:58:51 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\nilai.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 07:59:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\nilai.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 08:00:34 --> Call to a member function table() on null
+in APPPATH\Controllers\nilai.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 08:01:33 --> Call to a member function table() on null
+in APPPATH\Controllers\nilai.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 08:02:01 --> Call to a member function table() on null
+in APPPATH\Controllers\nilai.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 08:03:14 --> Call to a member function table() on null
+in APPPATH\Controllers\nilai.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 08:05:04 --> Call to a member function table() on null
+in APPPATH\Controllers\nilai.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-19 09:47:49 --> Unknown column 'nama_peserta' in 'field list'
+CRITICAL - 2022-07-19 09:47:49 --> Unknown column 'nama_peserta' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama_peserta`
+FROM `nilai`
+JOIN `users` ON `nilai`.`id_peserta` = `users`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_peserta`
+FROM `nilai`
+JOIN `users` ON `nilai`.`id_peserta` = `users`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_peserta`
+FROM `nilai`
+JOIN `users` ON `nilai`.`id_peserta` = `users`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama_peserta`
+FROM `nilai`
+JOIN `users` ON `nilai`.`id_peserta` = `users`.`id`', [], false)
+ 5 APPPATH\Models\NilaiModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\nilai.php(59): App\Models\NilaiModel->datanilai_peserta()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->nilai_peserta()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-19 09:49:00 --> Unknown column 'nama_peserta' in 'field list'
+CRITICAL - 2022-07-19 09:49:00 --> Unknown column 'nama_peserta' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama_peserta`, `nilai`, `status`
+FROM `nilai`
+JOIN `users` ON `nilai`.`id_peserta` = `users`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_peserta`, `nilai`, `status`
+FROM `nilai`
+JOIN `users` ON `nilai`.`id_peserta` = `users`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_peserta`, `nilai`, `status`
+FROM `nilai`
+JOIN `users` ON `nilai`.`id_peserta` = `users`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama_peserta`, `nilai`, `status`
+FROM `nilai`
+JOIN `users` ON `nilai`.`id_peserta` = `users`.`id`', [], false)
+ 5 APPPATH\Models\NilaiModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\nilai.php(59): App\Models\NilaiModel->datanilai_peserta()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->nilai_peserta()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-19 09:52:22 --> Unknown column 'nilai' in 'field list'
+CRITICAL - 2022-07-19 09:52:22 --> Unknown column 'nilai' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama`, `nilai`, `status`
+FROM `nilai`
+JOIN `users` ON `nilai`.`id_peserta` = `users`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, `nilai`, `status`
+FROM `nilai`
+JOIN `users` ON `nilai`.`id_peserta` = `users`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, `nilai`, `status`
+FROM `nilai`
+JOIN `users` ON `nilai`.`id_peserta` = `users`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, `nilai`, `status`
+FROM `nilai`
+JOIN `users` ON `nilai`.`id_peserta` = `users`.`id`', [], false)
+ 5 APPPATH\Models\NilaiModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\nilai.php(59): App\Models\NilaiModel->datanilai_peserta()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->nilai_peserta()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 09:52:48 --> Call to a member function getResult() on null
+in APPPATH\Controllers\nilai.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->nilai_peserta()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 09:53:19 --> Call to a member function get() on null
+in APPPATH\Controllers\nilai.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->nilai_peserta()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 09:53:48 --> Call to a member function getResult() on null
+in APPPATH\Controllers\nilai.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->nilai_peserta()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-19 09:54:59 --> Call to a member function getResult() on null
+in APPPATH\Controllers\nilai.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->nilai_peserta()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+>>>>>>> 87df145796cd6864b5e6c5f0a6900f71b5dc3066

@@ -1,0 +1,105 @@
+CRITICAL - 2022-07-18 02:56:33 --> Call to undefined method CodeIgniter\Router\RouteCollection::pots()
+in APPPATH\Config\Routes.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(760): require()
+ 2 SYSTEMPATH\CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 02:59:48 --> Call to a member function insert() on null
+in APPPATH\Controllers\gambar.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\gambar->inputgambar()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gambar))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 03:06:30 --> Call to a member function insert() on null
+in APPPATH\Controllers\gambar.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\gambar->inputgambar()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gambar))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 03:10:30 --> Call to a member function insert() on null
+in APPPATH\Controllers\gambar.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\gambar->inputgambar()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gambar))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 03:11:42 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 718.
+ 1 SYSTEMPATH\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\gambar.php(46): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\gambar->inputgambar()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gambar))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 07:09:54 -->  is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 314.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('ROOTPATH\\public')
+ 2 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('id_pertemuan', 'id_pertemuan', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\gambar.php(30): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\gambar->inputgambar()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gambar))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 09:20:50 --> Call to a member function isValid() on null
+in APPPATH\Controllers\gambar.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\gambar->inputgambar()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gambar))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 09:21:59 --> Call to a member function move() on null
+in APPPATH\Controllers\gambar.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\gambar->inputgambar()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gambar))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 09:25:45 --> Too few arguments to function App\Controllers\gambar::inputgambar(), 0 passed in D:\Xampp\htdocs\login_nonjwt\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\gambar.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\gambar->inputgambar()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gambar))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 09:27:00 --> Too few arguments to function App\Controllers\gambar::inputgambar(), 0 passed in D:\Xampp\htdocs\login_nonjwt\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\gambar.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\gambar->inputgambar()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gambar))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 09:27:50 --> Too few arguments to function App\Controllers\gambar::inputgambar(), 0 passed in D:\Xampp\htdocs\login_nonjwt\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\gambar.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\gambar->inputgambar()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gambar))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 09:28:22 --> Call to a member function move() on null
+in APPPATH\Controllers\gambar.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\gambar->inputgambar()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gambar))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 09:29:22 --> Call to a member function move() on null
+in APPPATH\Controllers\gambar.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\gambar->inputgambar()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gambar))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 09:46:24 --> Call to a member function move() on null
+in APPPATH\Controllers\gambar.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\gambar->inputgambar()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\gambar))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
