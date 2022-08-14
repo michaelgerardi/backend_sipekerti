@@ -1,0 +1,128 @@
+CRITICAL - 2022-07-28 02:44:51 --> Undefined property: App\Controllers\tugas::$db
+in APPPATH\Controllers\Tugas.php on line 73.
+ 1 APPPATH\Controllers\Tugas.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\tugas->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-28 02:47:05 --> Call to a member function table() on null
+in APPPATH\Controllers\Tugas.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\tugas->delete()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-28 02:47:41 --> Call to a member function table() on null
+in APPPATH\Controllers\Tugas.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\tugas->delete()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-28 03:52:59 --> Undefined property: App\Controllers\materi::$db
+in APPPATH\Controllers\Materi.php on line 83.
+ 1 APPPATH\Controllers\Materi.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\materi->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-28 03:53:42 --> Undefined property: App\Controllers\materi::$db
+in APPPATH\Controllers\Materi.php on line 83.
+ 1 APPPATH\Controllers\Materi.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\materi->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-28 03:53:51 --> Undefined property: App\Controllers\materi::$db
+in APPPATH\Controllers\Materi.php on line 83.
+ 1 APPPATH\Controllers\Materi.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\materi->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-28 04:27:35 --> Invalid argument supplied for foreach()
+in SYSTEMPATH\Database\BaseBuilder.php on line 387.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(387): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Models\PertemuanModel.php(55): CodeIgniter\Database\BaseBuilder->select()
+ 3 APPPATH\Controllers\Pertemuan.php(29): App\Models\PertemuanModel->getbyidkelas()
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pertemuan->getbyidkelas()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-28 04:27:38 --> Invalid argument supplied for foreach()
+in SYSTEMPATH\Database\BaseBuilder.php on line 387.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(387): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Models\PertemuanModel.php(55): CodeIgniter\Database\BaseBuilder->select()
+ 3 APPPATH\Controllers\Pertemuan.php(29): App\Models\PertemuanModel->getbyidkelas()
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pertemuan->getbyidkelas()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-28 04:27:42 --> Invalid argument supplied for foreach()
+in SYSTEMPATH\Database\BaseBuilder.php on line 387.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(387): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Models\PertemuanModel.php(55): CodeIgniter\Database\BaseBuilder->select()
+ 3 APPPATH\Controllers\Pertemuan.php(29): App\Models\PertemuanModel->getbyidkelas()
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pertemuan->getbyidkelas()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-28 05:03:46 --> Column 'id_tugas' cannot be null
+CRITICAL - 2022-07-28 05:03:46 --> Column 'id_tugas' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert()
+ 9 APPPATH\Controllers\Nilai.php(85): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\nilai->update()
+11 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-28 05:31:45 --> Undefined property: App\Controllers\tugaspeserta::$db
+in APPPATH\Controllers\TugasPeserta.php on line 81.
+ 1 APPPATH\Controllers\TugasPeserta.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\tugaspeserta->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-28 05:35:49 --> Table 'sipekerti.tugaspeserta' doesn't exist
+CRITICAL - 2022-07-28 05:35:49 --> Table 'sipekerti.tugaspeserta' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2358): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Controllers\TugasPeserta.php(87): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\tugaspeserta->delete()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-28 11:44:02 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2022-07-28 11:44:02 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH\Models\TugasPesertaModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\TugasPeserta.php(28): App\Models\TugasPesertaModel->getNama()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\tugaspeserta->getData()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

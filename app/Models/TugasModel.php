@@ -5,6 +5,6 @@ use CodeIgniter\Model;
 class TugasModel extends Model
 {
     protected $table = 'tugas';
-    protected $allowedFields = ['nama_tugas','tanggal_tugas','nilai','file'];
+    protected $allowedFields = ['id_pertemuan','judul','tanggal_mulai','tanggal_selesai','dokumen'];
 
 }

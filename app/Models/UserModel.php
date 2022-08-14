@@ -4,5 +4,10 @@ use CodeIgniter\Model;
  
 class UserModel extends Model{
     protected $table = 'users';
-    protected $allowedFields = ['email','password'];
+    protected $useSoftDeletes = true;
+    protected $useTimestamps = false;
+    protected $createdField  = 'created_at';
+    protected $updatedField  = 'updated_at';
+    protected $deletedField  = 'deleted_at';
+    protected $allowedFields = ['nik','username','no_hp','nama','email','password','level'];
 }

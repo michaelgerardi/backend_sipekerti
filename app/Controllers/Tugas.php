@@ -9,6 +9,13 @@ class tugas extends ResourceController
     protected $modelName = 'App\Models\TugasModel';
 	protected $format = 'json';
     use ResponseTrait;
+    public $db;
+
+    public function __construct()
+	{
+		$this->db = \Config\Database::connect();
+	}
+
     // get all Tugas
     public function index()
     {
@@ -22,12 +29,13 @@ class tugas extends ResourceController
 		helper(['form']);
 
 		$rules = [
-			'nama_tugas' => 'required',
-            'tanggal_tugas'=>'required|Date',
-            'nilai'=>'required',
-			'file' =>  'uploaded[file]',
-            'mime_in[file,application/pdf,application/zip,application/msword,application/x-tar]',
-            'max_size[file,5000]',
+			'judul' => 'required',
+            'id_pertemuan' => 'required',
+            'tanggal_mulai'=>'required|Date',
+            'tanggal_selesai'=>'required|Date',
+            'dokumen'=>'uploaded[dokumen]',
+            'mime_in[dokumen,application/pdf,application/zip,application/msword,application/x-tar]',
+            'max_size[dokumen,5000]'
 		];
 
 		if(!$this->validate($rules)){
@@ -35,17 +43,17 @@ class tugas extends ResourceController
 		}else{
 
 			//Get the file
-			$file = $this->request->getFile('file');
-			if(! $file->isValid())
+            $file = $this->request->getFile('dokumen');
+            if(! $file->isValid())
 				return $this->fail($file->getErrorString());
-
-			$file->move('./assets/uploads');
+            $file->move('./assets/uploads');
 
 			$data = [
-				'nama_tugas' => $this->request->getPost('nama_tugas'),
-                'tanggal_tugas' => $this->request->getPost('tanggal_tugas'),
-                'nilai' => $this->request->getPost('nilai'),
-				'file' => $file->getName()
+				'judul' => $this->request->getPost('judul'),
+                'id_pertemuan' => $this->request->getPost('id_pertemuan'),
+                'tanggal_mulai' => $this->request->getPost('tanggal_mulai'),
+                'tanggal_selesai' => $this->request->getPost('tanggal_selesai'),
+                'dokumen' => $file->getName()
 			];
 
 			$id = $this->model->insert($data);
@@ -57,7 +65,7 @@ class tugas extends ResourceController
       // get id tugas
      public function show($id = null)
     {
-         $model = new TugasModel();
+        $model = new TugasModel();
         $data = $model->getWhere(['id' => $id])->getResult();
         if($data){
              return $this->respond($data);
@@ -68,23 +76,43 @@ class tugas extends ResourceController
 
        // delete Tugas
        public function delete($id = null)
-     {
-         $model = new TugasModel();
-         $data = $model->find($id);
-        if($data){
-              $model->delete($id);
-               $response = [
-                   'status'   => 200,
-                   'error'    => null,
-                   'messages' => [
-                       'success' => 'Data Deleted'
-                   ]
-               ];
-               
-               return $this->respondDeleted($response);
-           }else{
-               return $this->failNotFound('No Data Found with id '.$id);
-           }          
-       }
+       {
+          $data = $this->db->table('tugas')->where(['id'=>$id])->delete();
+          return $this->respond($data,200);      
+      }
+
+    public function update($id = null)
+        {
+            $model = new TugasModel();
+            $json = $this->request->getJSON();
+            if($json){
+                $data = [
+                    'judul' => $json->nama_kelas,
+                    'tanggal_mulai' => $json->tanggal_mulai,
+                    'tanggal_selesai' =>$json->tanggal_selesai,
+                    'dokumen'=>$json->dokumen,
+                    'tugas'=>$json->tugas
+                ];
+            }else{
+                $input = $this->request->getRawInput();
+                $data = [
+                    'judul' => $input['judul'],
+                    'tanggal_mulai' => $input['tanggal_mulai'],
+                    'tanggal_selesai'=>$input['tanggal_selesai'],
+                    'dokumen'=>$input['dokumen'],
+                    'tugas'=>$input['tugas']
+                ];
+            }
+            // Insert to Database
+            $model->update($id, $data);
+            $response = [
+                'status'   => 200,
+                'error'    => null,
+                'messages' => [
+                    'success' => 'Data Updated'
+                ]
+            ];
+            return $this->respond($response);
+        }
 
 }

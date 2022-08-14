@@ -1,0 +1,128 @@
+CRITICAL - 2022-07-31 00:24:54 --> Call to undefined method App\Models\MateriModel::nama_pertemuan
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Materi.php(35): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\materi->getnama_pertemuan()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 00:25:01 --> Call to undefined method App\Models\MateriModel::nama_pertemuan
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Materi.php(35): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\materi->getnama_pertemuan()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 00:25:43 --> Call to undefined method App\Models\MateriModel::nama_pertemuan
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Materi.php(35): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\materi->getnama_pertemuan()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 00:25:49 --> Call to undefined method App\Models\MateriModel::nama_pertemuan
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Materi.php(35): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\materi->getnama_pertemuan()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 00:26:31 --> Call to undefined method App\Models\MateriModel::nama_pertemuan
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Materi.php(35): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\materi->getnama_pertemuan()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 00:29:52 --> Call to undefined method App\Models\MateriModel::nama_pertemuan
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Materi.php(35): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\materi->getnama_pertemuan()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 00:30:15 --> Call to undefined method App\Models\MateriModel::nama_pertemuan
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Materi.php(35): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\materi->getnama_pertemuan()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 01:14:28 --> Undefined property: App\Controllers\Dosen::$db
+in APPPATH\Controllers\Dosen.php on line 33.
+ 1 APPPATH\Controllers\Dosen.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Dosen->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 01:17:10 --> Undefined property: App\Controllers\Dosen::$db
+in APPPATH\Controllers\Dosen.php on line 33.
+ 1 APPPATH\Controllers\Dosen.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Dosen->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 01:17:33 --> Undefined property: App\Controllers\Dosen::$db
+in APPPATH\Controllers\Dosen.php on line 33.
+ 1 APPPATH\Controllers\Dosen.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Dosen->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 02:42:46 --> Undefined property: stdClass::$link
+in APPPATH\Controllers\Pertemuan.php on line 89.
+ 1 APPPATH\Controllers\Pertemuan.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pertemuan->update_pertemuan()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 02:43:22 --> Undefined property: stdClass::$link
+in APPPATH\Controllers\Pertemuan.php on line 89.
+ 1 APPPATH\Controllers\Pertemuan.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pertemuan->update_pertemuan()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 02:46:02 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr()
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds()
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate()
+ 8 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update()
+ 9 APPPATH\Controllers\Pertemuan.php(113): CodeIgniter\Model->update()
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pertemuan->update_pertemuan()
+11 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 04:17:57 --> Undefined property: App\Controllers\Komentar::$db
+in APPPATH\Controllers\Komentar.php on line 77.
+ 1 APPPATH\Controllers\Komentar.php(77): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Komentar->delete_posting()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 04:18:07 --> Undefined property: App\Controllers\Komentar::$db
+in APPPATH\Controllers\Komentar.php on line 77.
+ 1 APPPATH\Controllers\Komentar.php(77): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Komentar->delete_posting()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

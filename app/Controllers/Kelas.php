@@ -6,7 +6,14 @@ use App\Models\KelasModel;
 
 class Kelas extends ResourceController
 {
+    protected $modelName = 'App\Models\KelasModel';
     use ResponseTrait;
+    public $db;
+   
+    public function __construct()
+	{
+		$this->db = \Config\Database::connect();
+	}
     // get all kelas
     public function index()
     {
@@ -21,6 +28,7 @@ class Kelas extends ResourceController
         $model = new KelasModel();
         $data = [
             'nama_kelas' => $this->request->getPost('nama_kelas'),
+            'kode' => $this->request->getPost('kode_kelas'),
             'tanggal_mulai' => $this->request->getPost('tanggal_mulai'),
             'tanggal_selesai' => $this->request->getPost('tanggal_selesai'),
             'deskripsi' => $this->request->getPost('deskripsi'),
@@ -39,8 +47,27 @@ class Kelas extends ResourceController
 
         return $this->respondCreated($data, 201);
     }
+
+    public function deletePermanent($id = null){
+        $data = $this->db->table('kelas')->where(['id'=>$id])->delete();
+        return $this->respond($data,200);
+      }
+
+    public function history(){
+        $model = new KelasModel();
+        $data = $model->onlyDeleted()->findAll();
+        return $this->respond($data, 200);
+    }
+
+    public function restore($id = null){
+        $this->db = \Config\Database::connect();
+        $data = $this->db->table('kelas')
+        ->set('deleted_at',null,true)
+        ->where('id',$id)->update();
+        return $this->respond($data);
+
+    }
     
-      // delete kelas
       public function delete($id = null)
       {
           $model = new KelasModel();
@@ -70,6 +97,7 @@ class Kelas extends ResourceController
             if($json){
                 $data = [
                     'nama_kelas' => $json->nama_kelas,
+                    'kode_kelas' => $json->kode_kelas,
                     'tanggal_mulai' => $json->tanggal_mulai,
                     'tanggal_selesai' =>$json->tanggal_selesai,
                     'deskripsi'=>$json->deskripsi,
@@ -79,6 +107,7 @@ class Kelas extends ResourceController
                 $input = $this->request->getRawInput();
                 $data = [
                     'nama_kelas' => $input['nama_kelas'],
+                    'kode_kelas' => $input['kode_kelas'],
                     'tanggal_mulai' => $input['tanggal_mulai'],
                     'tanggal_selesai'=>$input['tanggal_selesai'],
                     'deskripsi'=>$input['deskripsi'],
@@ -107,6 +136,10 @@ class Kelas extends ResourceController
         }else{
             return $this->failNotFound('No Data Found with id '.$id);
         }
+    }
+    public function ses()
+    {
+        return $this->session->set_data;
     }
     
 }

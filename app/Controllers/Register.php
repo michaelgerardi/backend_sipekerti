@@ -12,14 +12,50 @@ class Register extends Controller
         helper(['form']);
 
         $rules = [
+            'nik'           => 'required',
+            'nama'          => 'required|min_length[3]',
+            'username'      => 'required|min_length[3]',
+            'no_hp'         => 'required|min_length[11]',
             'email'         => 'required|valid_email|is_unique[users.email]',
             'password'      => 'required|min_length[6]|max_length[200]'
         ];
         if(!$this->validate($rules)) return $this->fail($this->validator->getErrors());
             $model = new UserModel();
             $data = [
+                'nik'      => $this->request->getVar('nik'),
+                'nama'     => $this->request->getVar('nama'),
+                'username' => $this->request->getVar('username'),
+                'no_hp'    => $this->request->getVar('no_hp'),
                 'email'    => $this->request->getVar('email'),
-                'password' => $this->request->getVar('password')
+                'password' => $this->request->getVar('password'),
+                'level'    => ('3')
+            ];
+            $registered = $model->save($data);
+            return $this->respond($registered);
+        
+    }
+
+    public function registerPengajar(){
+        helper(['form']);
+
+        $rules = [
+            'nik'           => 'required',
+            'nama'          => 'required|min_length[3]',
+            'username'      => 'required|min_length[3]',
+            'no_hp'         => 'required|min_length[11]',
+            'email'         => 'required|valid_email|is_unique[users.email]',
+            'password'      => 'required|min_length[6]|max_length[200]'
+        ];
+        if(!$this->validate($rules)) return $this->fail($this->validator->getErrors());
+            $model = new UserModel();
+            $data = [
+                'nik'      => $this->request->getVar('nik'),
+                'nama'     => $this->request->getVar('nama'),
+                'username' => $this->request->getVar('username'),
+                'no_hp'    => $this->request->getVar('no_hp'),
+                'email'    => $this->request->getVar('email'),
+                'password' => $this->request->getVar('password'),
+                'level'    => ('2')
             ];
             $registered = $model->save($data);
             return $this->respond($registered);

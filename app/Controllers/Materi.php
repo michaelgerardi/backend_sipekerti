@@ -9,6 +9,12 @@ class materi extends ResourceController
     protected $modelName = 'App\Models\MateriModel';
 	protected $format = 'json';
     use ResponseTrait;
+    public $db;
+
+    public function __construct()
+	{
+		$this->db = \Config\Database::connect();
+	}
 
     // view materi
     public function index()
@@ -18,14 +24,27 @@ class materi extends ResourceController
         return $this->respond($data, 200);
     }
     
+    //public function joindata(){
+    //    $model = new MateriModel();
+    //    $data = $model->joindata()->getResult();
+    //    return $this->respond($data,200);
+    //}
+    
+    public function getnama_pertemuan($id = null){
+		$model = new MateriModel();
+        $data = $model->nama_pertemuan($id)->getResult();
+        return $this->respond($data,200);
+	}
+    
 	public function create(){
-		helper(['form']);
+		//helper(['form']);
 
 		$rules = [
-			'judul_materi' => 'required',
-			'berkas' =>  'uploaded[berkas]',
-            'mime_in[berkas,application/pdf,application/zip,application/msword,application/x-tar]',
-            'max_size[berkas,5000]',
+            'id_pertemuan' => 'required',
+			'judul' => 'required',
+			'dokumen' =>  'uploaded[dokumen]',
+            'mime_in[dokumen,application/pdf,application/zip,application/msword,application/x-tar]',
+            'max_size[dokumen,5000]',
 		];
 
 		if(!$this->validate($rules)){
@@ -33,17 +52,21 @@ class materi extends ResourceController
 		}else
         {
 
-			$file = $this->request->getFile('berkas');
+			$file = $this->request->getFile('dokumen');
 			if(! $file->isValid())
 				return $this->fail($file->getErrorString());
+                
 			$file->move('./assets/uploads');
+            $model = new MateriModel();
 			$data = [
-				'judul_materi' => $this->request->getPost('judul_materi'),
-				'berkas' => $file->getName()
+                'id_pertemuan' => $this->request->getPost('id_pertemuan'),
+				'judul' => $this->request->getPost('judul'),
+				'dokumen' => $file->getName()
 			];
 
-			$id = $this->model->insert($data);
-			$data['id'] = $id;
+			//$id = $this->model->insert($data);
+			//$data['id'] = $id;
+            $model->insert($data);
 			return $this->respondCreated($data);
 		}
 	}
@@ -60,27 +83,34 @@ class materi extends ResourceController
          }
    }
 
-   //delete materi
-   public function delete($id = null)
-   {
-       $model = new MateriModel();
-       $data = $model->find($id);
-      if($data){
-            $model->delete($id);
-             $response = [
-                 'status'   => 200,
-                 'error'    => null,
-                 'messages' => [
-                     'success' => 'Data Deleted'
-                 ]
-             ];
-             
-             return $this->respondDeleted($response);
-         }else{
-             return $this->failNotFound('No Data Found with id '.$id);
-       
-         }
+   public function joindata(){
+    //$builder = $this->db->table('materi');
+    //$builder->select('nama_pertemuan,judul,dokumen');
+    //$builder->join('pertemuan','materi.id_pertemuan = pertemuan.id');
+    //$data = $builder->get();
+    //return $data;
+}
+
+public function nama_pertemuan($id = null){
+    //$builder = $this->db->table('materi');
+    //$builder->select('nama_pertemuan, judul, dokumen');
+    //$builder->join('pertemuan','materi.id_pertemuan = pertemuan.id');
+    //$builder->Where(['id_pertemuan'=>$id]);
+    //$data = $builder->get();
+    //return $data;
+}
+
+    public function getMateri($id = null)
+    {
+        $model = new MateriModel();
+        $data = $model->getWhere(['id_pertemuan' => $id])->getResult();
+        return $this->respond($data, 200);
     }
+
+   public function deletePermanent($id = null){
+    $data = $this->db->table('materi')->where(['id'=>$id])->delete();
+    return $this->respond($data,200);
+  }
 
     public function update($id = null){
 		helper(['form', 'array']);

@@ -17,16 +17,19 @@ class Login extends Controller
         helper(['form']);
         $session = session();
         $model = new UserModel();
-        $email = $this->request->getVar('email');
+        $username = $this->request->getVar('username');
+        //$email = $this->request->getVar('email');
         $password = $this->request->getVar('password');
-        $data = $model->where('email', $email)->first();
+        $level = $this->request->getVar('level');
+        $data = $model->where('username', $username)->first();
         if($data){
             $pass = $data['password'];
             $verify_pass = password_verify($password, $pass);
             if($verify_pass);
                 $ses_data = [
                     'id'       => $data['id'],
-                    'email'    => $data['email'],
+                    'username' => $data['username'],
+                    'level'     => $data['level'],
                     'logged_in'     => TRUE
                 ];
                 $session->set($ses_data);
@@ -36,29 +39,65 @@ class Login extends Controller
         }
     }
 
-    // public function coba_multiuser(){
-    //     session_start();
-    //     $username = $_POST['username'];
-    //     $password = $_POST['password'];
-    //     $user = mysqli_query($koneksi, "select * from user where username='$username' and password='$password'");
-    //     $cek = mysqli_num_rows($user);
-    //     if($cek > 0){
-    //         $data = mysqli_fetch_assoc($user);
-    //         //buat session username dan levelnya
-    //         if($data['level'] == 'admin'){
-    //             $_SESSION['username'] = $username;
-    //             $_SESSION['level'] = 'admin';
-    //             return $this.respond($data);
-    //         }elseif($data['level'] == 'pengajar'){
-    //             $_SESSION['username'] = $username;
-    //             $_SESSION['level'] = 'pengajar';
-    //             return $this.respond($data);
-    //         }elseif($data['level']== 'dosen'){
-    //             $_SESSION['username'] = $username;
-    //             $_SESSION['level'] = 'dosen';
-    //             return $this.respond($data);
-    //         }
-    //     }
+    public function delete($id = null)
+      {
+          $model = new UserModel();
+          $data = $model->find($id);
+          if($data){
+              $model->delete($id);
+              $response = [
+                  'status'   => 200,
+                  'error'    => null,
+                  'messages' => [
+                      'success' => 'Data Deleted'
+                  ]
+              ];
+              
+              return $this->respondDeleted($response);
+          }else{
+              return $this->failNotFound('No Data Found with id '.$id);
+          }
+          
+      }
 
-    // }
+    public function update($id = null)
+      {
+          $model = new UserModel();
+          $json = $this->request->getJSON();
+          if($json){
+              $data = [
+                  'nik' => $json->nik,
+                  'nama' => $json->nama,
+                  'username' => $json->username,
+                  'no_hp' =>$json->no_hp,
+                  'email'=>$json->email,
+                  'password'=>$json->password
+              ];
+          }else{
+              $input = $this->request->getRawInput();
+              $data = [
+                  'nik' => $input['nik'],
+                  'nama' => $input['nama'],
+                  'username' => $input['username'],
+                  'no_hp'=>$input['no_hp'],
+                  'email'=>$input['email'],
+                  'password'=>$input['password']
+              ];
+          }
+          // Insert to Database
+          $model->update($id, $data);
+          $response = [
+              'status'   => 200,
+              'error'    => null,
+              'messages' => [
+                  'success' => 'Data Updated'
+              ]
+          ];
+          return $this->respond($response);
+      }
+
+      public function getuser()
+      {
+        return $this->respond(session());
+      }
 }

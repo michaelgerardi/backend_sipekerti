@@ -3,11 +3,19 @@
 use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\API\ResponseTrait;
 use App\Models\KomentarModel;
-use App\Models\PertemuanModel;
 
 class Komentar extends ResourceController
 {
+    protected $modelName = 'App\Models\KomentarModel';
+	protected $format = 'json';
     use ResponseTrait;
+    public $db;
+
+    public function __construct()
+	{
+		$this->db = \Config\Database::connect();
+	}
+
     // get all Komentar
     public function index()
     {
@@ -20,9 +28,10 @@ class Komentar extends ResourceController
     public function create()
     {
         $model = new KomentarModel();
-        $data = [
-            'pesan' => $this->request->getPost('pesan'),
-            'id_pertemuan' => $this->request->getPost('id_pertemuan')
+        $rules = [
+            'catatan'=> $this->request->getPost('catatan'), 
+            'id_pertemuan'=> $this->request->getPost('id_pertemuan'),
+            'id_users'=> $this->request->getPost('id_users')
         ];
         $data = json_decode(file_get_contents("php://input"));
         //$data = $this->request->getPost();
@@ -38,27 +47,24 @@ class Komentar extends ResourceController
         return $this->respondCreated($data, 201);
     }
 
+    public function getData($id = null){
+        $model = new KomentarModel();
+        $data = $model->getNama($id)->getResult();
+        return $this->respond($data, 200);
+    }
+
+    public function getByUser($id = null){
+        $model = new KomentarModel();
+        $data = $model->getByUser($id)->getResult();
+        return $this->respond($data, 200);
+    }
+
     // delete komentar
     public function delete($id = null)
     {
-        $model = new KomentarModel();
-        $data = $model->find($id);
-        if($data){
-            $model->delete($id);
-            $response = [
-                'status'   => 200,
-                'error'    => null,
-                'messages' => [
-                    'success' => 'Data Deleted'
-                ]
-            ];
-            
-            return $this->respondDeleted($response);
-        }else{
-            return $this->failNotFound('No Data Found with id '.$id);
-        }
-        
-    }
+       $data = $this->db->table('posting')->where(['id'=>$id])->delete();
+       return $this->respond($data,200);      
+   }
 
     //truncate data komentar
     public function deleteall(){
@@ -84,17 +90,21 @@ class Komentar extends ResourceController
           $json = $this->request->getJSON();
           if($json){
               $data = [
-                  'judul' => $json->judul,
-                  'pesan' => $json->pesan,
+                  'catatan' => $json->catatan,
+                  'id_pengajar' => $json->id_pengajar,
+                  'komentar' => $json->komentar,
+                  'id_peserta' => $json->id_peserta,
                   'id_pertemuan' => $json->id_pertemuan
                   
               ];
           }else{
               $input = $this->request->getRawInput();
               $data = [
-                  'judul' => $input['judul'],
-                  'pesan' => $input['pesan'],
-                  'id_pertemuan' => $input['id_pertemuan']
+                    'catatan'=> $input['catatan'], 
+                    'id_pengajar'=> $input['id_pengajar'], 
+                    'komentar'=> $input['komentar'], 
+                    'id_peserta' => $input['id_peserta'],
+                    'id_pertemuan' => $input['id_pertemuan']
               ];
           }
           // Insert to Database
@@ -109,4 +119,9 @@ class Komentar extends ResourceController
           return $this->respond($response);
       }
 
+      public function getnama_pertemuan($id = null){
+		$model = new KomentarModel();
+        $data = $model->nama_pertemuan($id)->getResult();
+        return $this->respond($data,200);
+	}
 }
